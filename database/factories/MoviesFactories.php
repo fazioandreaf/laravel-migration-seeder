@@ -6,9 +6,11 @@ use App\Movies;
 use Faker\Generator as Faker;
 
 $factory->define(Movies::class, function (Faker $faker) {
+    $tmp= $faker-> word;
+
     return [
-        'title'=> $faker -> word,
-        'original_title'=> $faker -> title ,
+        'title'=> $tmp,
+        'original_title'=> $tmp,
         'nationality'=> $faker -> state,
         'date'=> $faker -> date,
         'vote'=> $faker -> numberBetween(1,1000)*0.01,
