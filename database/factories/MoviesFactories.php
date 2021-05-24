@@ -11,7 +11,7 @@ $factory->define(Movies::class, function (Faker $faker) {
         'original_title'=> $faker -> title ,
         'nationality'=> $faker -> state,
         'date'=> $faker -> date,
-        'vote'=> $faker -> numberBetween(1,10),
+        'vote'=> $faker -> numberBetween(1,1000)*0.01,
 
     ];
 });
