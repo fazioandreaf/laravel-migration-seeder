@@ -8,3 +8,9 @@
   background-color: lightblue;
 }
 
+* body form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+

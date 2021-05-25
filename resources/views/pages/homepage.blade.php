@@ -10,5 +10,6 @@
 
 </li>
 @endforeach
+@include('components.add_row')
     {{-- {{$movies[]}} --}}
 @endsection

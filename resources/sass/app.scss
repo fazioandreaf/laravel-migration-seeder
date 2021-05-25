@@ -5,5 +5,10 @@
 
     body{
         background-color: lightblue;
+        form{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        }
     }
 }

@@ -6,7 +6,7 @@ use App\Movies;
 use Faker\Generator as Faker;
 
 $factory->define(Movies::class, function (Faker $faker) {
-    $tmp= $faker-> word;
+    $tmp= $faker-> sentence(3);
 
     return [
         'title'=> ucfirst ($tmp),
